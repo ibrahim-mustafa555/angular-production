@@ -1,0 +1,16 @@
+
+
+
+
+<div class="container">
+    <div  class="row">
+        <div *ngFor="let user of users" class="col-md-3">
+          <div class="user">
+              <h2>{{user.name}}</h2>
+              <h4>{{user.age}}</h4>
+              <img class="img-fluid" [src]="user.img">
+              <span class="badge badge-primary">{{user.salary}}</span>
+          </div>
+        </div>
+    </div>
+</div>
